@@ -29,6 +29,5 @@ public class Casting {
         float num8 = (float) num7;
         System.out.println(num8);
 
-
     }
 }
