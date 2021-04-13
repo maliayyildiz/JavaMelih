@@ -1,10 +1,24 @@
 package ifStatement;
 
+import java.util.Scanner;
+
 public class IfStatement01 {
     public static void main(String[] args) {
-        String str = 2 + 3 +"5";
-        System.out.println(str);
+      //  Type java code, if an integer is even, output will be “The integer is even”.
+      //  If the integer is odd, output will be “The integer is odd”.
 
-        String str1 = "2"+(5+1);
+        Scanner scan = new Scanner(System.in);
+        System.out.println("bir sayi ver");
+        int sayi = scan.nextInt();
+
+        if (sayi%2==0) {
+            System.out.println("Integer is odd");
+        }
+        if (sayi%2==1){
+            System.out.println("Integer is even");
+        }
+
+
+scan.close();
     }
 }
