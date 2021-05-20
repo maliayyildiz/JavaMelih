@@ -74,7 +74,7 @@ public class StringMethod01 {
 
         //startWith() ==> to check initial
         // return boolean
-        String str4 = "Thursday night plans";
+        String str4 = "Thursday, night, plans    ";
         System.out.println(str4.startsWith("T"));//true
         System.out.println(str4.startsWith("A"));//false
         //if you want to check specific character with specific index, you can
@@ -82,5 +82,27 @@ public class StringMethod01 {
 
         System.out.println(str4.startsWith("r",3));//true
         System.out.println(str4.startsWith("day",5));//true
+//endsWith() ==> determines whether a string ends with  a specific characther/s
+        //return boolean
+        System.out.println(str4.endsWith("s"));//true
+        System.out.println(str4.endsWith("plans"));//true
+        System.out.println(str4.endsWith("r"));//false
+
+        //substring() ==> exract a part of a string
+        //retuns String
+//substring(a); ==> a means starting index and this method will return whole text starting with a index
+        System.out.println(str4.substring(9));//night plans
+//substring(a,b) => a starting index and inclusive b ending index and exclusive
+        System.out.println(str4.substring(0,8));//Thursday
+
+        //trim() ==> is used to delete space/s character from the begining and ending of a String
+        System.out.println(str4);
+        System.out.println(str4.trim());//Thursdaynightplans
+
+        //split() ==>
+        String[] arr = str4.split(", ",3);
+        for (int i =0; i< arr.length; i++){
+            System.out.println(arr[i]);
+        }
     }
 }
