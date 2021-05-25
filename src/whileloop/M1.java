@@ -19,5 +19,9 @@ public class M1 {
             }
 
         }
+
+        //compile time error CTE
+        //Run time error    RTE
+
     }
 }
